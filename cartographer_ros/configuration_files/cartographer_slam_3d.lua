@@ -49,14 +49,14 @@ MAP_BUILDER.num_background_threads = 4
 
 TRAJECTORY_BUILDER_3D.max_range = 60.0
 TRAJECTORY_BUILDER_3D.min_range = 0.5
-TRAJECTORY_BUILDER_3D.num_accumulated_range_data = 10
+TRAJECTORY_BUILDER_3D.num_accumulated_range_data = 5
+TRAJECTORY_BUILDER_3D.submaps.range_data_inserter.num_free_space_voxels = 8
 TRAJECTORY_BUILDER_3D.voxel_filter_size = 0.05
 TRAJECTORY_BUILDER_3D.use_online_correlative_scan_matching = true
 
 POSE_GRAPH.constraint_builder.global_localization_min_score = 0.66
 POSE_GRAPH.constraint_builder.min_score = 0.62
 POSE_GRAPH.constraint_builder.sampling_ratio = 0.03
-POSE_GRAPH.optimize_every_n_nodes = 320
 POSE_GRAPH.optimization_problem.ceres_solver_options.max_num_iterations = 10
 
 return options
